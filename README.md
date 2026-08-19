@@ -17,7 +17,8 @@ A MongoDB instance (local mongod, Docker, or a free MongoDB Atlas cluster)
 
 1. Backend setup
 
-bashcd backend
+bash
+cd backend
 cp .env.example .env     
 npm install
 npm run dev 
@@ -25,7 +26,8 @@ npm run dev
 
 2. Frontend setup
 
-bashcd frontend
+bash
+cd frontend
 cp .env.local.example .env.local   
 npm install
 npm run dev
