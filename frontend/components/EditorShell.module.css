@@ -1,0 +1,44 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.statusBar {
+  padding: 6px 16px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.statusBarError {
+  padding: 6px 16px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  background: #fdecec;
+  color: var(--color-danger);
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.canvasArea {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 24px;
+  background-image: radial-gradient(circle, var(--color-border-strong) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.canvasArea > div {
+  box-shadow: 0 4px 24px rgba(28, 29, 34, 0.12);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}

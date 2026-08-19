@@ -1,0 +1,132 @@
+.panel {
+  width: 260px;
+  flex-shrink: 0;
+  background: var(--color-surface);
+  border-left: 1px solid var(--color-border);
+  padding: 18px 16px;
+  overflow-y: auto;
+}
+
+.heading {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  margin: 0 0 4px;
+}
+
+.typeLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-accent);
+  text-transform: capitalize;
+  margin: 0 0 16px;
+}
+
+.empty {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.field,
+.fieldFull {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.fieldFull {
+  width: 100%;
+}
+
+.field input,
+.fieldFull input,
+.fieldFull textarea {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text);
+  padding: 7px 9px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.fieldFull textarea {
+  font-family: var(--font-ui);
+  resize: vertical;
+}
+
+.field input:focus,
+.fieldFull input:focus,
+.fieldFull textarea:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 0;
+  border-color: var(--color-accent);
+}
+
+.colorRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.colorRow input[type='color'] {
+  width: 36px;
+  height: 32px;
+  padding: 2px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+}
+
+.colorRow input[type='text'] {
+  flex: 1;
+}
+
+.layerRow {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0 12px;
+}
+
+.secondaryButton {
+  flex: 1;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: 8px 6px;
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.secondaryButton:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.deleteButton {
+  width: 100%;
+  background: #fdecec;
+  border: 1px solid var(--color-danger);
+  color: var(--color-danger);
+  border-radius: var(--radius-sm);
+  padding: 9px 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.deleteButton:hover {
+  background: var(--color-danger);
+  color: #fff;
+}

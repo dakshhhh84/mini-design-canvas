@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --color-bg: #f3f4f7;
+  --color-surface: #ffffff;
+  --color-graphite: #1c1d22;
+  --color-graphite-soft: #2a2b32;
+  --color-border: #e2e4ea;
+  --color-border-strong: #cdd0d9;
+  --color-text: #1c1d22;
+  --color-text-muted: #6b6e79;
+  --color-accent: #5b5ff0;
+  --color-accent-soft: #eceafd;
+  --color-danger: #e05a5a;
+
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-ui);
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+}
